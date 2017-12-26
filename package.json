@@ -1,0 +1,29 @@
+{
+  "name": "tt2",
+  "version": "0.0.11",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "NODE_ENV=dev nodemon --exec babel-node ./src/index.js",
+    "prepare": "node_modules/babel-cli/bin/babel.js src --minified --no-comments --out-dir lib"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "colors": "^1.1.2",
+    "config": "^1.28.1",
+    "fs": "^0.0.1-security",
+    "js-yaml": "^3.10.0",
+    "jwt-simple": "^0.5.1",
+    "mysql": "^2.15.0",
+    "nodemailer": "^4.4.0",
+    "winston": "^2.4.0"
+  }
+}
